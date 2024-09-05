@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web App</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* 1 экран */
+        .screen {
+            position: relative;
+            width: 360px;
+            height: 640px;
+            background: #0D1A2F;
+            overflow: hidden;
+        }
+
+        /* Rectangle 3 */
+        .rectangle-3 {
+            position: absolute;
+            width: 360px;
+            height: 345px;
+            bottom: 0;
+            background: #373F5F;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 50px 50px 0 0;
+        }
+
+        /* Dog image */
+        .dog {
+            position: absolute;
+            width: 205px;
+            height: 237px;
+            left: 80px;
+            top: 107px;
+            background: url('Dog.png') no-repeat;
+            background-size: cover;
+        }
+
+        /* Buttons */
+        .button {
+            position: absolute;
+            width: 147px;
+            height: 37px;
+            left: 103px;
+            background: rgba(8, 17, 31, 0.6);
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .button-1 {
+            top: 387px;
+        }
+
+        .button-2 {
+            top: 452px;
+        }
+
+        .button:hover {
+            background: #42AE67;
+            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header bar */
+        .header-bar {
+            position: absolute;
+            width: 192px;
+            height: 47px;
+            top: 0;
+            left: calc(50% - 96px);
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 0 0 20px 20px;
+        }
+
+        /* Global edit icon */
+        .icon {
+            position: absolute;
+            width: 29px;
+            height: 29px;
+            top: 9px;
+            left: 166px;
+            opacity: 0.3;
+            mix-blend-mode: plus-lighter;
+        }
+
+        .circle {
+            position: absolute;
+            width: 9px;
+            height: 9px;
+            border: 1.5px solid #FFFFFF;
+            left: 229.42px;
+            top: 21.64px;
+            transform: rotate(-22.07deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="screen">
+        <!-- Dog image -->
+        <div class="dog"></div>
+
+        <!-- Buttons -->
+        <div class="button button-1">Создать сделку</div>
+        <div class="button button-2">Найти сделку</div>
+
+        <!-- Rectangle 3 -->
+        <div class="rectangle-3"></div>
+
+        <!-- Header bar -->
+        <div class="header-bar"></div>
+
+        <!-- Global edit icon -->
+        <div class="icon">
+            <div class="circle"></div>
+        </div>
+    </div>
+</body>
+</html>
